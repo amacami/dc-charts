@@ -1,0 +1,20 @@
+{
+    "charts":[
+        {
+            "name":"postgres",
+            "version":"1",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "url":"postgres"
+        },{
+            "name":"mysql",
+            "version":"1",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "url":"mysql"
+        },{
+            "name":"couchbase",
+            "version":"1",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "url":"couchbase"
+        }
+    ]
+}
