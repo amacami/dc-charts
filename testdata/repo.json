@@ -4,17 +4,17 @@
             "name":"postgres",
             "version":"1",
             "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "url":"postgres"
+            "url":"file://./postgres"
         },{
             "name":"mysql",
             "version":"1",
             "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "url":"mysql"
+            "url":"file://./mysql"
         },{
             "name":"couchbase",
             "version":"1",
             "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "url":"couchbase"
+            "url":"file://./couchbase"
         }
     ]
 }

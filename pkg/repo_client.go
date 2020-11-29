@@ -1,11 +1,10 @@
 package pkg
 
 import (
-	"fmt"
 	"io"
-	"os"
 
 	"github.com/amacami/dc-charts/internal/repository"
+	"github.com/amacami/dc-charts/internal/url"
 	"github.com/olekukonko/tablewriter"
 	"github.com/prometheus/common/log"
 )
@@ -46,12 +45,5 @@ func (c *RepoClient) Get(out io.Writer, name string) error {
 		return err
 	}
 
-	fileName := "testdata/" + chart.Url
-	file, err := os.Stat(fileName)
-	if os.IsNotExist(err) {
-		return fmt.Errorf("cannot download chart from url %s", fileName)
-	}
-
-	fmt.Println("File to copy " + file.Name())
-	return nil
+	return url.NewDownloader().Get(chart.Url)
 }
